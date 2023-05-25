@@ -32,10 +32,10 @@ EJS:
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/super-nintendo/Contra%20III%20-%20The%20Alien%20Wars%20(U)%20[!].zip", "snes", "Contraiii-snes", "4205"),
     }
 
-CPU/GPU, what do they do?
+## CPU/GPU, what do they do?
 
-the cpu determines how long the initial loading bar lasts
-the gpu determines the resolution of the screen
+## the cpu determines how long the initial loading bar lasts
+## the gpu determines the resolution of the screen
 ```
 TODO:
 
