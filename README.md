@@ -64,7 +64,7 @@ QB-Target
 
 > These are various versions of qb-arcade, rcore_arcade and gabz_arcade mashed into a  #qb-pokearcade for my friend @GRANNY - I AM NEW TO MAKING SCRIPTS SO IF ITS FKED UP PLS FIX IT <3**
 
-This script allows you to create an arcade in your FiveM GTA server using the QBcore framework. Players can interact with the arcade machines and play different games.
+## This script allows you to create an arcade in your FiveM GTA server using the QBcore framework. Players can interact with the arcade machines and play different games.
 
 Features:
 - Create arcade games with customizable positions, rotations, and game data
