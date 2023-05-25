@@ -42,10 +42,15 @@ TODO:
  QB-Target integration to allow all arcade machines to work
  Freeze Player to allow gamepad use without punching and moving in GTA
  Add some animations to show player is using arcade machine / computer
+
+ENABLE BATTLE LINK OPTION BETWEEN ARCADE MACHINES FOR PVP 
+
+```
 KNOWN ISSUES:
 
 UI button to load state will softlock the game requiring an F8 quit.
 Gamepad controls character in GTA and emulator at the same time.
+```
 
 MISC:
 
