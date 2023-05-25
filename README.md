@@ -11,12 +11,14 @@ I'll add some documentation of the config, however it's pretty straight forward.
 There are 3 types of machines, RetroMachine, GamingMachine and SuperMachine. the above mentioned values correspond to lists of games, where supermachine is an aggregate (combination of) RetroMachine and GamingMachine. There are comments on the config on how to add new games, but it boils down to selecting a page (dos or ejs), and filling the appropiate query parameters:
 
 DOSBOX: 
+```
     {
         -- this is the name in the menu/ game list
         name = "Duke Nukem 3D", 
         -- link to msdos page, link to rom, and executable (in this zip, there is an EXE called DUKE3D which starts the game. This may be a BAT in some cases)
         link = string.format("nui://d3-arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/duke3d.zip", "./DUKE3D.EXE"),
     }
+```
 
 EJS: 
 
