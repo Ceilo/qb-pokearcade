@@ -72,7 +72,7 @@ Features:
 - Trigger events for playing specific games
 
 Installation:
-1. Copy the "qb-arcade" folder into your FiveM server's resources directory.
+1. Copy the "qb-pokearcade" folder into your FIVEM's Servers resources directory.
 2. Add "start qb-arcade" to your server.cfg file to ensure the script starts when the server launches.
 
 Usage:
