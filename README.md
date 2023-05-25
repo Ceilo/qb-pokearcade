@@ -94,3 +94,20 @@ For any issues or questions, please contact me via DISCORD $²#6666.
 
 Enjoy the arcade gaming experience in your FiveM GTA server!
 
+# EXTRA INFO ON THE #LUA TABLE
+
+```
+Config.Locale: Specifies the translation/locale to be used (set to "en" for English).
+Config.keyToOpenTicketMenu and Config.keyToOpenComputer: Define the key bindings to open the ticket menu and computer, respectively.
+Config.Arcade: Contains information about the arcade house, including the position, heading, and model of the NPC and the blip settings.
+Config.singleUsePrice: Specifies the price for single-use items.
+Config.ArcadeModels: Defines a list of arcade machine model hashes.
+Config.ticketPrice: Sets the prices and times for different ticket types (bronze, silver, and gold).
+Config.enableGameHouse: Determines if the arcade is paid or not.
+Config.GPUList and Config.CPUList: Lists of GPU and CPU options for the arcade machines.
+Config.RetroMachine: Contains information about retro arcade machines, including their names, links to ROMs, and save file settings.
+Config.SaveFileDirectory: Specifies the directory where save files are stored.
+GetSaveFilePath, DoesSaveFileExist, SaveGame, LoadGame, and DeleteSaveFile: Helper functions to manage save files for the arcade games.
+Config.SuperMachine: A combination of all the different types of arcade machines (retro, gaming, sports, and arcade).
+Config.computerList: Defines the list of computer positions in the world, including their types, GPU and CPU specifications, and seat hashes.
+```
