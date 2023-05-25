@@ -2,6 +2,9 @@
 
 ### HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE, AND OTHER QB-CORE ARCADE SYSTEMS FORMATTED INTO A POKEMON ARCADE FOR MY FRIEND @GRANNY <3
 
+
+![https://preview.redd.it/6k6qpepzgv671.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=cc402d20d51376c3c80f502c5b48a93abdf17aa3](https://preview.redd.it/6k6qpepzgv671.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=cc402d20d51376c3c80f502c5b48a93abdf17aa3)
+
 This custom script features small upgrades and framework dependent changes to improve on the original rcore_arcade/gabz_arcade etc
 
 The emulatorjs integration has been PRd to the original rcore_arcade! I will strive to add to the original wherever possible, however, this is a QBCore specific resource which means some if not most of the incoming changes will not work with the original, which is developed as a standalone/esx script.
