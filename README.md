@@ -1,6 +1,6 @@
 QBCore POKEArcade System
 
-HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE
+```HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE
 
 This custom script features small upgrades and framework dependent changes to improve on the original rcore_arcade/gabz_arcade etc
 
