@@ -127,3 +127,35 @@ Ensure that you have defined the machine types for the super computers in the Co
 
 Check the Config.computerList table and make sure you have defined the correct values for each computer. Verify that the isInGamingHouse flag is set correctly for each computer, and ensure that the computerType, computerGPU, and computerCPU values are valid.
 ```
+
+# ADD PVP BATTLELINK TO YOUR QB-CORE SERVER (WIP)
+
+> 1. Add a new configuration option to enable or disable PvP battles:
+ ```lua
+-- Configurable option to enable PvP battles
+Config.enablePvP = true
+```
+> 2. Create a new server-side event for handling PvP battles:
+```lua
+RegisterServerEvent('qb-arcade:pvpBattle')
+AddEventHandler('qb-arcade:pvpBattle', function(opponentId)
+    -- Validate the opponent ID and initiate the battle logic
+    -- Perform necessary checks and calculations for the battle
+    -- Send battle results to the players involved
+    -- Update player statistics, experience, etc.
+end)
+```
+> 3. Modify the client-side script to include a function for initiating PvP battles:
+```lua
+function InitiatePvPBattle(opponentId)
+    -- Trigger the server event to initiate the battle
+    TriggerServerEvent('qb-arcade:pvpBattle', opponentId)
+end
+```
+> 4. Update the HTML/JavaScript interface for the Pokemon games to include a PvP battle button or UI element. When the button is clicked, call the InitiatePvPBattle function and pass the opponent's ID as a parameter.
+
+> 5. In the server-side event handler for qb-arcade:pvpBattle, implement the necessary logic for the PvP battle. This can include validating the players' Pokemon teams, calculating battle outcomes based on moves and stats, updating player statistics, etc. You may need to leverage existing libraries or implement your own battle system depending on the complexity of the PvP battles you want to support.
+
+Remember to test and iterate on your implementation to ensure it works as expected and handles various scenarios, such as invalid inputs, synchronization, and fairness in battles.
+Note: The code provided above assumes you are using the QB-Arcade script as a base and have the necessary knowledge and understanding of Lua, JavaScript, and FiveM development to implement the PvP battle feature effectively.
+
