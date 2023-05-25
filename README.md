@@ -67,9 +67,9 @@ Installation:
 2. Add "start qb-arcade" to your server.cfg file to ensure the script starts when the server launches.
 
 Usage:
-1. Customize the arcade games by editing the "arcadeGames" table in the `client.lua` file.
+1. Customize the arcade games by editing the "arcadeGames" table in the `locales.lua` file.
 2. Specify the model, position, rotation, and game data for each arcade game. You can add more arcade games by following the provided examples.
-3. Run your FiveM server and ensure the `qb-arcade` resource is started.
+3. Run your FiveM server and ensure the `qb-pokearcade` resource is started.
 4. Players can interact with the arcade games by approaching them and pressing the context key (default: E).
 5. Implement your desired functionality for each game by handling the corresponding events in the script.
 
