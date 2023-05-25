@@ -157,5 +157,5 @@ end
 > 5. In the server-side event handler for qb-arcade:pvpBattle, implement the necessary logic for the PvP battle. This can include validating the players' Pokemon teams, calculating battle outcomes based on moves and stats, updating player statistics, etc. You may need to leverage existing libraries or implement your own battle system depending on the complexity of the PvP battles you want to support.
 
 ### Remember to test and iterate on your implementation to ensure it works as expected and handles various scenarios, such as invalid inputs, synchronization, and fairness in battles.
-Note: The code provided above assumes you are using the QB-Arcade script as a base and have the necessary knowledge and understanding of Lua, JavaScript, and FiveM development to implement the PvP battle feature effectively. I will eventually finish writing a full incorporated PVP battle function script once I figure out how to do it more client-server side than networkprotocol sided.
+> Note: The code provided above assumes you are using the QB-Arcade script as a base and have the necessary knowledge and understanding of Lua, JavaScript, and FiveM development to implement the PvP battle feature effectively. I will eventually finish writing a full incorporated PVP battle function script once I figure out how to do it more client-server side than networkprotocol sided.
 
