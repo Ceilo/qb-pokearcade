@@ -27,9 +27,10 @@ Config.Arcade = {
     },
 }
 
--- "single use" prices to be used on non gamehouse machines (e,g props in houses, etc, via qb-target. check readme.md)
+-- "single use" prices to be used on non-gamehouse machines (e.g., props in houses, etc., via qb-target. check readme.md)
 Config.singleUsePrice = 500
--- arcade machine model hashes
+
+-- Arcade machine model hashes
 Config.ArcadeModels = {
     815879628,
     1301167921,
@@ -43,9 +44,10 @@ Config.ArcadeModels = {
     398786301,
     -1991361770,
 }
--- ticket price, and time in arcade.
+
+-- Ticket price and time in arcade.
 Config.ticketPrice = {
-    [_U("bronz")] = {
+    [_U("bronze")] = {
         price = 2000,
         time = 30, -- in minutes
     },
@@ -59,16 +61,17 @@ Config.ticketPrice = {
     },
 }
 
--- is arcade payed ?
+-- Is arcade paid?
 Config.enableGameHouse = true
--- do not change unless you know what you're doing
+
+-- Do not change unless you know what you're doing
 Config.GPUList = {
     [1] = "ETX2080",
     [2] = "ETX1050",
     [3] = "ETX660",
 }
 
--- do not change unless you know what you're doing
+-- Do not change unless you know what you're doing
 Config.CPUList = {
     [1] = "U9_9900",
     [2] = "U7_8700",
@@ -76,61 +79,69 @@ Config.CPUList = {
     [4] = "BENTIUM",
 }
 
-Config.MyList = {
-    {
-        name = "name",
-        link = "bleh",
-    },
-}
-
--- game list for retro machine
-   -- emulatorjs powers this second page, it takes in a rom url, a "core" type (eg nes, snes, etc) a game name, and an id for network play (yep! some cores support network play!)
-    -- for more info see : 
-    -- https://github.com/ethanaobrien/emulatorjs/tree/main/docs
 Config.RetroMachine = {
     {
         name = "Pokemon Red",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Red%20Version%20(U)%20(V1.1)%20[C][!].zip", "gbc", "PokemonRed-gbc", "4201"),
+        saveEnabled = true,
     },
     {
         name = "Pokemon Blue",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Blue%20Version%20(U)%20(V1.1)%20[C][!].zip", "gbc", "PokemonBlue-gbc", "4202"),
+        saveEnabled = true,
     },
     {
         name = "Pokemon Yellow",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Yellow%20Version%20(U)%20[V1.1].zip", "gbc", "PokemonYellow-gbc", "4203"),
+        saveEnabled = true,
     },
     {
         name = "Pokemon Gold",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Gold%20Version%20(U)%20(V1.1)%20[S].zip", "gbc", "PokemonGold-gbc", "4204"),
+        saveEnabled = true,
     },
     {
         name = "Pokemon Silver",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Silver%20Version%20(U)%20(V1.1)%20[S].zip", "gbc", "PokemonSilver-gbc", "4205"),
+        saveEnabled = true,
     },
     {
         name = "Pokemon Crystal",
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Pokemon%20-%20Crystal%20Version%20(V1.1)%20(U)%20[C][!].zip", "gbc", "PokemonCrystal-gbc", "4206"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pokemon Ruby",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20Ruby%20Version%20(V1.1)%20(U)%20[M].zip", "gba", "PokemonRuby-gba", "4207"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pokemon Sapphire",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20Sapphire%20Version%20(V1.1)%20(U)%20[M].zip", "gba", "PokemonSapphire-gba", "4208"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pokemon Emerald",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20Emerald%20Version%20(U)%20[Xenophobia].zip", "gba", "PokemonEmerald-gba", "4209"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pokemon FireRed",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20FireRed%20Version%20(U)%20(V1.1)%20[C][!].zip", "gba", "PokemonFireRed-gba", "4210"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pokemon LeafGreen",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20LeafGreen%20Version%20(U)%20(V1.1)%20[C][!].zip", "gba", "PokemonLeafGreen-gba", "4211"),
+        saveEnabled = true,
     },
 }
 
---game list for super computers
-Config.SuperMachine = {}
-
-for i = 1, #Config.RetroMachine do
-    table.insert(Config.SuperMachine, Config.RetroMachine[i])
-end
-
-for i = 1, #Config.GamingMachine do
-    table.insert(Config.SuperMachine, Config.GamingMachine[i])
-end
-
--- computer list in world
+-- Computer list in the world
 Config.computerList = {
     -- Gaming computers
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -138,8 +149,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -147,8 +157,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -156,8 +165,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -165,8 +173,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -174,8 +181,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -183,8 +189,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -192,8 +197,7 @@ Config.computerList = {
         seatHash = 536071214,
     },
     {
-        -- if false player dont need a ticket to play on this computer.
-        isInGamingHouse = true,
+        isInGamingHouse = true, -- If false, players don't need a ticket to play on this computer.
         computerType = Config.GamingMachine,
         computerGPU = Config.GPUList[2],
         computerCPU = Config.CPUList[2],
@@ -201,3 +205,4 @@ Config.computerList = {
         seatHash = 536071214,
     },
 }
+
