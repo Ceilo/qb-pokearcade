@@ -54,7 +54,7 @@ MISC:
 Dependencies
 
 QB-Target
-[https://github.com/d3st1nyh4x/MenuAPI](fork fixed for large lists)
+[https://github.com/d3st1nyh4x/MenuAPI] (fork fixed for large lists)
 
 
 > These are various versions of qb-arcade, rcore_arcade and gabz_arcade mashed into a  #qb-pokearcade for my friend @GRANNY - I AM NEW TO MAKING SCRIPTS SO IF ITS FKED UP PLS FIX IT <3**
