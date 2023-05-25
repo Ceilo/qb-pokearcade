@@ -110,4 +110,20 @@ Config.SaveFileDirectory: Specifies the directory where save files are stored.
 GetSaveFilePath, DoesSaveFileExist, SaveGame, LoadGame, and DeleteSaveFile: Helper functions to manage save files for the arcade games.
 Config.SuperMachine: A combination of all the different types of arcade machines (retro, gaming, sports, and arcade).
 Config.computerList: Defines the list of computer positions in the world, including their types, GPU and CPU specifications, and seat hashes.
+
+
+OTHERS: 
+Ensure that you have imported the required language file or defined the _U function used for localization in the Config table.
+
+Make sure that you have defined the following machine types: Config.GamingMachine, Config.SportsMachine, and Config.ArcadeMachine. These configurations are missing from the provided code.
+
+Double-check that you have set the correct IDs for each game in the Config.RetroMachine table. The id values should be unique for each game.
+
+Verify that you have specified the correct path to the save file directory in the Config.SaveFileDirectory variable. This path should point to the directory where you want to store the save files.
+
+Confirm that you have defined the functions GetSaveFilePath, DoesSaveFileExist, SaveGame, LoadGame, and DeleteSaveFile correctly. These functions are used for managing save files and require proper implementation.
+
+Ensure that you have defined the machine types for the super computers in the Config.SuperMachine table. It seems that you are trying to combine all machine types, so make sure you have defined the appropriate tables before populating Config.SuperMachine.
+
+Check the Config.computerList table and make sure you have defined the correct values for each computer. Verify that the isInGamingHouse flag is set correctly for each computer, and ensure that the computerType, computerGPU, and computerCPU values are valid.
 ```
