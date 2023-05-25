@@ -36,7 +36,7 @@ CPU/GPU, what do they do?
 
 the cpu determines how long the initial loading bar lasts
 the gpu determines the resolution of the screen
-
+```
 TODO:
 
  QB-Target integration to allow all arcade machines to work
@@ -44,23 +44,24 @@ TODO:
  Add some animations to show player is using arcade machine / computer
 
 ENABLE BATTLE LINK OPTION BETWEEN ARCADE MACHINES FOR PVP 
-
+```
 ```
 KNOWN ISSUES:
 
 UI button to load state will softlock the game requiring an F8 quit.
 Gamepad controls character in GTA and emulator at the same time.
 ```
-
+```
 MISC:
 
 /testgames opens a "super computer" with all games for testing purposes, restricted to admins.
-
+```
+```
 Dependencies
 
 QB-Target
 [https://github.com/d3st1nyh4x/MenuAPI] (fork fixed for large lists)
-
+```
 
 > These are various versions of qb-arcade, rcore_arcade and gabz_arcade mashed into a  #qb-pokearcade for my friend @GRANNY - I AM NEW TO MAKING SCRIPTS SO IF ITS FKED UP PLS FIX IT <3**
 
