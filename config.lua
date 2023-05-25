@@ -135,6 +135,16 @@ Config.RetroMachine = {
         link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-advance/Pokemon%20-%20LeafGreen%20Version%20(U)%20(V1.1)%20[C][!].zip", "gba", "PokemonLeafGreen-gba", "4211"),
         saveEnabled = true,
     },
+    {
+        name = "Uno",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/gameboy-color/Uno%20(U)%20(M7)%20[C][!].zip", "gbc", "Uno-gbc", "4207"),
+        saveEnabled = true,
+    },
+    {
+        name = "Pacman",
+        link = string.format("nui://d3-arcade/html/ejs.html?url=%s&params=%s&name=%s&id=%s", "https://static.emulatorgames.net/roms/atari-2600/Pac-Man%20(A)%20[MAME].zip", "atari2600", "Pacman-atari2600", "4208"),
+        saveEnabled = false,
+    },
 }
 -- Save File Directory
 Config.SaveFileDirectory = "path/to/save/files/"
