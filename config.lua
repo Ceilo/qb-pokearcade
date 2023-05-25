@@ -136,7 +136,75 @@ Config.RetroMachine = {
         saveEnabled = true,
     },
 }
+-- Save File Directory
+Config.SaveFileDirectory = "path/to/save/files/"
 
+-- Function to get the save file path for a given game ID
+function GetSaveFilePath(gameId)
+    return Config.SaveFileDirectory .. gameId .. ".sav"
+end
+
+-- Function to check if a save file exists for a given game ID
+function DoesSaveFileExist(gameId)
+    local filePath = GetSaveFilePath(gameId)
+    local file = io.open(filePath, "r")
+    if file then
+        io.close(file)
+        return true
+    else
+        return false
+    end
+end
+
+-- Function to save game data for a given game ID
+function SaveGame(gameId, data)
+    local filePath = GetSaveFilePath(gameId)
+    local file = io.open(filePath, "w")
+    if file then
+        file:write(data)
+        io.close(file)
+        return true
+    else
+        return false
+    end
+end
+
+-- Function to load game data for a given game ID
+function LoadGame(gameId)
+    local filePath = GetSaveFilePath(gameId)
+    local file = io.open(filePath, "r")
+    if file then
+        local data = file:read("*a")
+        io.close(file)
+        return data
+    else
+        return nil
+    end
+end
+
+-- Function to delete save file for a given game ID
+function DeleteSaveFile(gameId)
+    local filePath = GetSaveFilePath(gameId)
+    os.remove(filePath)
+end
+-- Game list for super computers
+Config.SuperMachine = {}
+
+for i = 1, #Config.RetroMachine do
+    table.insert(Config.SuperMachine, Config.RetroMachine[i])
+end
+
+for i = 1, #Config.GamingMachine do
+    table.insert(Config.SuperMachine, Config.GamingMachine[i])
+end
+
+for i = 1, #Config.SportsMachine do
+    table.insert(Config.SuperMachine, Config.SportsMachine[i])
+end
+
+for i = 1, #Config.ArcadeMachine do
+    table.insert(Config.SuperMachine, Config.ArcadeMachine[i])
+end
 -- Computer list in the world
 Config.computerList = {
     -- Gaming computers
