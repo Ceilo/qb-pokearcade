@@ -1,4 +1,4 @@
-QBCore POKEArcade System
+# QBCore POKEArcade System
 
 HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE
 
