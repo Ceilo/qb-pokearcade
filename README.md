@@ -1,6 +1,7 @@
 QBCore POKEArcade System
 
-```HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE
+`
+HEAVYILY BASED ON RCORE_ARCADE AND GABZ_ARCADE
 
 This custom script features small upgrades and framework dependent changes to improve on the original rcore_arcade/gabz_arcade etc
 
@@ -49,7 +50,7 @@ MISC:
 Dependencies
 
 QB-Target
-https://github.com/d3st1nyh4x/MenuAPI (fork fixed for large lists)```
+https://github.com/d3st1nyh4x/MenuAPI (fork fixed for large lists)`
 
 
 This script was turned into # qb-pokearcade for my friend GRANNY - I AM NEW TO MAKING SCRIPTS SO IF ITS FKED UP PLS FIX IT <3
